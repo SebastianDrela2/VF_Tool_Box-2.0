@@ -1,6 +1,6 @@
-﻿namespace Hello_World_App
+﻿namespace Hello_World_App.Forms
 {
-    partial class Form2
+    partial class WorkerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WorkerForm));
             this.LBL_WORKERS = new System.Windows.Forms.Label();
-            this.TXT_BOX_WORKERS = new System.Windows.Forms.TextBox();
+            this._txtBoxWorkers = new System.Windows.Forms.TextBox();
             this.LBL_FURBS = new System.Windows.Forms.Label();
-            this.TXT_BOX_FURBS = new System.Windows.Forms.TextBox();
+            this._txtBoxFurbs = new System.Windows.Forms.TextBox();
             this.LBL_FANGS = new System.Windows.Forms.Label();
-            this.TXT_BOX_FANGS = new System.Windows.Forms.TextBox();
+            this._txtBoxFangs = new System.Windows.Forms.TextBox();
             this.LBL_FIRES = new System.Windows.Forms.Label();
-            this.TXT_BOX_FIRES = new System.Windows.Forms.TextBox();
+            this._txtBoxFires = new System.Windows.Forms.TextBox();
             this.LBL_SATYRS = new System.Windows.Forms.Label();
-            this.TXT_BOX_SATYRS = new System.Windows.Forms.TextBox();
+            this._txtBoxSatyrs = new System.Windows.Forms.TextBox();
             this.BTN_RESULT = new System.Windows.Forms.Button();
-            this.LBL_TIME_INF = new System.Windows.Forms.Label();
+            this._lblTimeInf = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LBL_WORKERS
@@ -53,14 +53,13 @@
             this.LBL_WORKERS.TabIndex = 0;
             this.LBL_WORKERS.Text = "Workers";
             // 
-            // TXT_BOX_WORKERS
+            // _txtBoxWorkers
             // 
-            this.TXT_BOX_WORKERS.Enabled = false;
-            this.TXT_BOX_WORKERS.Location = new System.Drawing.Point(12, 40);
-            this.TXT_BOX_WORKERS.Name = "TXT_BOX_WORKERS";
-            this.TXT_BOX_WORKERS.Size = new System.Drawing.Size(100, 23);
-            this.TXT_BOX_WORKERS.TabIndex = 1;
-            this.TXT_BOX_WORKERS.TextChanged += new System.EventHandler(this.TXT_BOX_WORKERS_TextChanged);
+            this._txtBoxWorkers.Enabled = false;
+            this._txtBoxWorkers.Location = new System.Drawing.Point(12, 40);
+            this._txtBoxWorkers.Name = "_txtBoxWorkers";
+            this._txtBoxWorkers.Size = new System.Drawing.Size(100, 23);
+            this._txtBoxWorkers.TabIndex = 1;
             // 
             // LBL_FURBS
             // 
@@ -72,13 +71,13 @@
             this.LBL_FURBS.TabIndex = 2;
             this.LBL_FURBS.Text = "Furbolgs";
             // 
-            // TXT_BOX_FURBS
+            // _txtBoxFurbs
             // 
-            this.TXT_BOX_FURBS.Enabled = false;
-            this.TXT_BOX_FURBS.Location = new System.Drawing.Point(12, 105);
-            this.TXT_BOX_FURBS.Name = "TXT_BOX_FURBS";
-            this.TXT_BOX_FURBS.Size = new System.Drawing.Size(100, 23);
-            this.TXT_BOX_FURBS.TabIndex = 3;
+            this._txtBoxFurbs.Enabled = false;
+            this._txtBoxFurbs.Location = new System.Drawing.Point(12, 105);
+            this._txtBoxFurbs.Name = "_txtBoxFurbs";
+            this._txtBoxFurbs.Size = new System.Drawing.Size(100, 23);
+            this._txtBoxFurbs.TabIndex = 3;
             // 
             // LBL_FANGS
             // 
@@ -90,13 +89,13 @@
             this.LBL_FANGS.TabIndex = 4;
             this.LBL_FANGS.Text = "Fang Harvesters";
             // 
-            // TXT_BOX_FANGS
+            // _txtBoxFangs
             // 
-            this.TXT_BOX_FANGS.Enabled = false;
-            this.TXT_BOX_FANGS.Location = new System.Drawing.Point(12, 169);
-            this.TXT_BOX_FANGS.Name = "TXT_BOX_FANGS";
-            this.TXT_BOX_FANGS.Size = new System.Drawing.Size(100, 23);
-            this.TXT_BOX_FANGS.TabIndex = 5;
+            this._txtBoxFangs.Enabled = false;
+            this._txtBoxFangs.Location = new System.Drawing.Point(12, 169);
+            this._txtBoxFangs.Name = "_txtBoxFangs";
+            this._txtBoxFangs.Size = new System.Drawing.Size(100, 23);
+            this._txtBoxFangs.TabIndex = 5;
             // 
             // LBL_FIRES
             // 
@@ -108,13 +107,13 @@
             this.LBL_FIRES.TabIndex = 6;
             this.LBL_FIRES.Text = "Fire Deforesters";
             // 
-            // TXT_BOX_FIRES
+            // _txtBoxFires
             // 
-            this.TXT_BOX_FIRES.Enabled = false;
-            this.TXT_BOX_FIRES.Location = new System.Drawing.Point(166, 40);
-            this.TXT_BOX_FIRES.Name = "TXT_BOX_FIRES";
-            this.TXT_BOX_FIRES.Size = new System.Drawing.Size(100, 23);
-            this.TXT_BOX_FIRES.TabIndex = 7;
+            this._txtBoxFires.Enabled = false;
+            this._txtBoxFires.Location = new System.Drawing.Point(166, 40);
+            this._txtBoxFires.Name = "_txtBoxFires";
+            this._txtBoxFires.Size = new System.Drawing.Size(100, 23);
+            this._txtBoxFires.TabIndex = 7;
             // 
             // LBL_SATYRS
             // 
@@ -126,13 +125,13 @@
             this.LBL_SATYRS.TabIndex = 8;
             this.LBL_SATYRS.Text = "Satyrs";
             // 
-            // TXT_BOX_SATYRS
+            // _txtBoxSatyrs
             // 
-            this.TXT_BOX_SATYRS.Enabled = false;
-            this.TXT_BOX_SATYRS.Location = new System.Drawing.Point(166, 106);
-            this.TXT_BOX_SATYRS.Name = "TXT_BOX_SATYRS";
-            this.TXT_BOX_SATYRS.Size = new System.Drawing.Size(100, 23);
-            this.TXT_BOX_SATYRS.TabIndex = 9;
+            this._txtBoxSatyrs.Enabled = false;
+            this._txtBoxSatyrs.Location = new System.Drawing.Point(166, 106);
+            this._txtBoxSatyrs.Name = "_txtBoxSatyrs";
+            this._txtBoxSatyrs.Size = new System.Drawing.Size(100, 23);
+            this._txtBoxSatyrs.TabIndex = 9;
             // 
             // BTN_RESULT
             // 
@@ -142,39 +141,38 @@
             this.BTN_RESULT.TabIndex = 10;
             this.BTN_RESULT.Text = "CALCULATE";
             this.BTN_RESULT.UseVisualStyleBackColor = true;
-            this.BTN_RESULT.Click += new System.EventHandler(this.BTN_RESULT_Click);
+            this.BTN_RESULT.Click += new System.EventHandler(this.OnResultClicked);
             // 
-            // LBL_TIME_INF
+            // _lblTimeInf
             // 
-            this.LBL_TIME_INF.AutoSize = true;
-            this.LBL_TIME_INF.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LBL_TIME_INF.Location = new System.Drawing.Point(321, 88);
-            this.LBL_TIME_INF.Name = "LBL_TIME_INF";
-            this.LBL_TIME_INF.Size = new System.Drawing.Size(107, 15);
-            this.LBL_TIME_INF.TabIndex = 11;
-            this.LBL_TIME_INF.Text = "AWAITING INPUT";
+            this._lblTimeInf.AutoSize = true;
+            this._lblTimeInf.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this._lblTimeInf.Location = new System.Drawing.Point(321, 88);
+            this._lblTimeInf.Name = "_lblTimeInf";
+            this._lblTimeInf.Size = new System.Drawing.Size(107, 15);
+            this._lblTimeInf.TabIndex = 11;
+            this._lblTimeInf.Text = "AWAITING INPUT";
             // 
-            // Form2
+            // WorkerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(505, 235);
-            this.Controls.Add(this.LBL_TIME_INF);
+            this.Controls.Add(this._lblTimeInf);
             this.Controls.Add(this.BTN_RESULT);
-            this.Controls.Add(this.TXT_BOX_SATYRS);
+            this.Controls.Add(this._txtBoxSatyrs);
             this.Controls.Add(this.LBL_SATYRS);
-            this.Controls.Add(this.TXT_BOX_FIRES);
+            this.Controls.Add(this._txtBoxFires);
             this.Controls.Add(this.LBL_FIRES);
-            this.Controls.Add(this.TXT_BOX_FANGS);
+            this.Controls.Add(this._txtBoxFangs);
             this.Controls.Add(this.LBL_FANGS);
-            this.Controls.Add(this.TXT_BOX_FURBS);
+            this.Controls.Add(this._txtBoxFurbs);
             this.Controls.Add(this.LBL_FURBS);
-            this.Controls.Add(this.TXT_BOX_WORKERS);
+            this.Controls.Add(this._txtBoxWorkers);
             this.Controls.Add(this.LBL_WORKERS);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form2";
+            this.Name = "WorkerForm";
             this.Text = "Worker Tab";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,16 +181,16 @@
         #endregion
 
         private Label LBL_WORKERS;
-        private TextBox TXT_BOX_WORKERS;
+        private TextBox _txtBoxWorkers;
         private Label LBL_FURBS;
-        private TextBox TXT_BOX_FURBS;
+        private TextBox _txtBoxFurbs;
         private Label LBL_FANGS;
-        private TextBox TXT_BOX_FANGS;
+        private TextBox _txtBoxFangs;
         private Label LBL_FIRES;
-        private TextBox TXT_BOX_FIRES;
+        private TextBox _txtBoxFires;
         private Label LBL_SATYRS;
-        private TextBox TXT_BOX_SATYRS;
+        private TextBox _txtBoxSatyrs;
         private Button BTN_RESULT;
-        private Label LBL_TIME_INF;
+        private Label _lblTimeInf;
     }
 }

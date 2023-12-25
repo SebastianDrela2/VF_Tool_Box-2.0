@@ -1,6 +1,6 @@
-﻿namespace Hello_World_App
+﻿namespace Hello_World_App.Forms
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.LBL_PROMPT_USER = new System.Windows.Forms.Label();
             this.WOOD_TEXT_BOX = new System.Windows.Forms.TextBox();
             this.LBL_PROMPT_TIME = new System.Windows.Forms.Label();
@@ -42,16 +42,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.LBL_WOOD = new System.Windows.Forms.Label();
-            this.TXT_BOX_WOOD = new System.Windows.Forms.TextBox();
+            this._txtBoxWood = new System.Windows.Forms.TextBox();
             this.LBL_TIME_1 = new System.Windows.Forms.Label();
-            this.TXT_BOT_TIME_1 = new System.Windows.Forms.TextBox();
+            this._txtBoxTime = new System.Windows.Forms.TextBox();
             this.LBL_RESULT = new System.Windows.Forms.Label();
-            this.TXT_BOX_RESULT = new System.Windows.Forms.TextBox();
+            this._txtBoxResult = new System.Windows.Forms.TextBox();
             this.BTN_CALCULATE = new System.Windows.Forms.Button();
             this.LBL_GOLDMINES = new System.Windows.Forms.Label();
-            this.TXT_BOX_GOLDMINES = new System.Windows.Forms.TextBox();
+            this._txtBoxGoldMines = new System.Windows.Forms.TextBox();
             this.LBL_COMETS = new System.Windows.Forms.Label();
-            this.TXT_BOX_COMETS = new System.Windows.Forms.TextBox();
+            this._txtBoxComets = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -167,15 +167,13 @@
             this.LBL_WOOD.Size = new System.Drawing.Size(95, 15);
             this.LBL_WOOD.TabIndex = 0;
             this.LBL_WOOD.Text = "Bonus Wood:";
-            this.LBL_WOOD.Click += new System.EventHandler(this.label3_Click);
             // 
-            // TXT_BOX_WOOD
+            // _txtBoxWood
             // 
-            this.TXT_BOX_WOOD.Location = new System.Drawing.Point(169, 120);
-            this.TXT_BOX_WOOD.Name = "TXT_BOX_WOOD";
-            this.TXT_BOX_WOOD.Size = new System.Drawing.Size(100, 23);
-            this.TXT_BOX_WOOD.TabIndex = 1;
-            this.TXT_BOX_WOOD.TextChanged += new System.EventHandler(this.TXT_BOX_WOOD_TextChanged);
+            this._txtBoxWood.Location = new System.Drawing.Point(169, 120);
+            this._txtBoxWood.Name = "_txtBoxWood";
+            this._txtBoxWood.Size = new System.Drawing.Size(100, 23);
+            this._txtBoxWood.TabIndex = 1;
             // 
             // LBL_TIME_1
             // 
@@ -186,15 +184,13 @@
             this.LBL_TIME_1.Size = new System.Drawing.Size(41, 15);
             this.LBL_TIME_1.TabIndex = 2;
             this.LBL_TIME_1.Text = "Time:";
-            this.LBL_TIME_1.Click += new System.EventHandler(this.label3_Click_1);
             // 
-            // TXT_BOT_TIME_1
+            // _txtBoxTime
             // 
-            this.TXT_BOT_TIME_1.Location = new System.Drawing.Point(169, 153);
-            this.TXT_BOT_TIME_1.Name = "TXT_BOT_TIME_1";
-            this.TXT_BOT_TIME_1.Size = new System.Drawing.Size(100, 23);
-            this.TXT_BOT_TIME_1.TabIndex = 3;
-            this.TXT_BOT_TIME_1.TextChanged += new System.EventHandler(this.TXT_BOT_TIME_1_TextChanged);
+            this._txtBoxTime.Location = new System.Drawing.Point(169, 153);
+            this._txtBoxTime.Name = "_txtBoxTime";
+            this._txtBoxTime.Size = new System.Drawing.Size(100, 23);
+            this._txtBoxTime.TabIndex = 3;
             // 
             // LBL_RESULT
             // 
@@ -205,16 +201,14 @@
             this.LBL_RESULT.Size = new System.Drawing.Size(93, 15);
             this.LBL_RESULT.TabIndex = 4;
             this.LBL_RESULT.Text = "Total Result:";
-            this.LBL_RESULT.Click += new System.EventHandler(this.LBL_RESULT_Click);
             // 
-            // TXT_BOX_RESULT
+            // _txtBoxResult
             // 
-            this.TXT_BOX_RESULT.Enabled = false;
-            this.TXT_BOX_RESULT.Location = new System.Drawing.Point(169, 199);
-            this.TXT_BOX_RESULT.Name = "TXT_BOX_RESULT";
-            this.TXT_BOX_RESULT.Size = new System.Drawing.Size(100, 23);
-            this.TXT_BOX_RESULT.TabIndex = 5;
-            this.TXT_BOX_RESULT.TextChanged += new System.EventHandler(this.TXT_BOX_RESULT_TextChanged);
+            this._txtBoxResult.Enabled = false;
+            this._txtBoxResult.Location = new System.Drawing.Point(169, 199);
+            this._txtBoxResult.Name = "_txtBoxResult";
+            this._txtBoxResult.Size = new System.Drawing.Size(100, 23);
+            this._txtBoxResult.TabIndex = 5;
             // 
             // BTN_CALCULATE
             // 
@@ -224,7 +218,7 @@
             this.BTN_CALCULATE.TabIndex = 6;
             this.BTN_CALCULATE.Text = "CALCULATE";
             this.BTN_CALCULATE.UseVisualStyleBackColor = true;
-            this.BTN_CALCULATE.Click += new System.EventHandler(this.BTN_CALCULATE_Click);
+            this.BTN_CALCULATE.Click += new System.EventHandler(this.OnCalculateClicked);
             // 
             // LBL_GOLDMINES
             // 
@@ -236,13 +230,13 @@
             this.LBL_GOLDMINES.TabIndex = 7;
             this.LBL_GOLDMINES.Text = "Goldmines:";
             // 
-            // TXT_BOX_GOLDMINES
+            // _txtBoxGoldMines
             // 
-            this.TXT_BOX_GOLDMINES.Enabled = false;
-            this.TXT_BOX_GOLDMINES.Location = new System.Drawing.Point(384, 148);
-            this.TXT_BOX_GOLDMINES.Name = "TXT_BOX_GOLDMINES";
-            this.TXT_BOX_GOLDMINES.Size = new System.Drawing.Size(100, 23);
-            this.TXT_BOX_GOLDMINES.TabIndex = 8;
+            this._txtBoxGoldMines.Enabled = false;
+            this._txtBoxGoldMines.Location = new System.Drawing.Point(384, 148);
+            this._txtBoxGoldMines.Name = "_txtBoxGoldMines";
+            this._txtBoxGoldMines.Size = new System.Drawing.Size(100, 23);
+            this._txtBoxGoldMines.TabIndex = 8;
             // 
             // LBL_COMETS
             // 
@@ -254,13 +248,13 @@
             this.LBL_COMETS.TabIndex = 9;
             this.LBL_COMETS.Text = "Comets:";
             // 
-            // TXT_BOX_COMETS
+            // _txtBoxComets
             // 
-            this.TXT_BOX_COMETS.Enabled = false;
-            this.TXT_BOX_COMETS.Location = new System.Drawing.Point(384, 178);
-            this.TXT_BOX_COMETS.Name = "TXT_BOX_COMETS";
-            this.TXT_BOX_COMETS.Size = new System.Drawing.Size(100, 23);
-            this.TXT_BOX_COMETS.TabIndex = 10;
+            this._txtBoxComets.Enabled = false;
+            this._txtBoxComets.Location = new System.Drawing.Point(384, 178);
+            this._txtBoxComets.Name = "_txtBoxComets";
+            this._txtBoxComets.Size = new System.Drawing.Size(100, 23);
+            this._txtBoxComets.TabIndex = 10;
             // 
             // pictureBox1
             // 
@@ -271,7 +265,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -291,7 +284,6 @@
             this.pictureBox3.Size = new System.Drawing.Size(26, 27);
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox4
             // 
@@ -311,9 +303,9 @@
             this.BTN_OPEN_WORKER_FORM.TabIndex = 15;
             this.BTN_OPEN_WORKER_FORM.Text = "Worker Tab";
             this.BTN_OPEN_WORKER_FORM.UseVisualStyleBackColor = true;
-            this.BTN_OPEN_WORKER_FORM.Click += new System.EventHandler(this.BTN_OPEN_WORKER_FORM_Click);
+            this.BTN_OPEN_WORKER_FORM.Click += new System.EventHandler(this.OnWorkerFormClicked);
             // 
-            // Form1
+            // MainForm
             // 
             this.ClientSize = new System.Drawing.Size(680, 310);
             this.Controls.Add(this.BTN_OPEN_WORKER_FORM);
@@ -321,20 +313,19 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.TXT_BOX_COMETS);
+            this.Controls.Add(this._txtBoxComets);
             this.Controls.Add(this.LBL_COMETS);
-            this.Controls.Add(this.TXT_BOX_GOLDMINES);
+            this.Controls.Add(this._txtBoxGoldMines);
             this.Controls.Add(this.LBL_GOLDMINES);
             this.Controls.Add(this.BTN_CALCULATE);
-            this.Controls.Add(this.TXT_BOX_RESULT);
+            this.Controls.Add(this._txtBoxResult);
             this.Controls.Add(this.LBL_RESULT);
-            this.Controls.Add(this.TXT_BOT_TIME_1);
+            this.Controls.Add(this._txtBoxTime);
             this.Controls.Add(this.LBL_TIME_1);
-            this.Controls.Add(this.TXT_BOX_WOOD);
+            this.Controls.Add(this._txtBoxWood);
             this.Controls.Add(this.LBL_WOOD);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "MainForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -359,16 +350,16 @@
         private Label label1;
         private Label label2;
         private Label LBL_WOOD;
-        private TextBox TXT_BOX_WOOD;
+        private TextBox _txtBoxWood;
         private Label LBL_TIME_1;
-        private TextBox TXT_BOT_TIME_1;
+        private TextBox _txtBoxTime;
         private Label LBL_RESULT;
-        private TextBox TXT_BOX_RESULT;
+        private TextBox _txtBoxResult;
         private Button BTN_CALCULATE;
         private Label LBL_GOLDMINES;
-        private TextBox TXT_BOX_GOLDMINES;
+        private TextBox _txtBoxGoldMines;
         private Label LBL_COMETS;
-        private TextBox TXT_BOX_COMETS;
+        private TextBox _txtBoxComets;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
